@@ -1,4 +1,5 @@
 .Rproj
 .Rhistory
-.Rdata
+.RData
 debug.log
+.Rproj.user
