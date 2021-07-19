@@ -229,13 +229,12 @@ function(input, output, session) {
   
     src0 <- normalizePath('report_kernel.Rmd') 
     src1 <- normalizePath('report.Rmd')
-    src2 <- normalizePath('Logo.jpg')
-    src4 <- normalizePath('references.bib')
-    src5 <- normalizePath('report_code_unknown.Rmd') 
-    src6 <- normalizePath('report_code_common.Rmd') 
-    src7 <- normalizePath('report_code_UTF8.Rmd')
-    src8 <- normalizePath('FiraSans-Bold.otf')
-    src9 <- normalizePath('FiraSans-Regular.otf')
+    src2 <- normalizePath('references.bib')
+    src3 <- normalizePath('report_code_unknown.Rmd') 
+    src4 <- normalizePath('report_code_common.Rmd') 
+    src5 <- normalizePath('report_code_UTF8.Rmd')
+    src6 <- normalizePath('FiraSans-Bold.otf')
+    src7 <- normalizePath('FiraSans-Regular.otf')
 
     
     # Temporarily switch to the temp dir
@@ -243,13 +242,12 @@ function(input, output, session) {
     on.exit(setwd(owd))
     file.copy(src0, 'report_kernel.Rmd', overwrite = TRUE)
     file.copy(src1, 'report.Rmd', overwrite = TRUE)
-    file.copy(src2, 'Logo.jpg', overwrite = TRUE)
-    file.copy(src4, 'references.bib', overwrite = TRUE)
-    file.copy(src5, 'report_code_unknown.Rmd', overwrite = TRUE)
-    file.copy(src6, 'report_code_common.Rmd', overwrite = TRUE)
-    file.copy(src7, 'report_code_UTF8.Rmd', overwrite = TRUE)
-    file.copy(src8, 'FiraSans-Bold.otf', overwrite = TRUE)
-    file.copy(src9, 'FiraSans-Regular.otf', overwrite = TRUE)
+    file.copy(src2, 'references.bib', overwrite = TRUE)
+    file.copy(src3, 'report_code_unknown.Rmd', overwrite = TRUE)
+    file.copy(src4, 'report_code_common.Rmd', overwrite = TRUE)
+    file.copy(src5, 'report_code_UTF8.Rmd', overwrite = TRUE)
+    file.copy(src6, 'FiraSans-Bold.otf', overwrite = TRUE)
+    file.copy(src7, 'FiraSans-Regular.otf', overwrite = TRUE)
 
     
     # Set up parameters to pass to Rmd document
